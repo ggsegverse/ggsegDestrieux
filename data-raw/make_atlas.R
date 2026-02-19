@@ -16,10 +16,11 @@ Sys.setenv(
 )
 
 library(dplyr)
-library(ggsegExtra)
+library(ggseg.extra)
 library(ggseg.formats)
 
 options(freesurfer.verbose = FALSE)
+options(chromote.timeout = 120)
 future::plan(future::sequential)
 progressr::handlers("cli")
 progressr::handlers(global = TRUE)
@@ -50,7 +51,7 @@ for (f in annot_files) {
 # ── Create atlas ─────────────────────────────────────────────────
 cli::cli_h1("Creating desterieux cortical atlas")
 
-atlas_raw <- create_cortical_atlas(
+atlas_raw <- create_cortical_from_annotation(
   input_annot = annot_files,
   atlas_name = "desterieux",
   output_dir = "data-raw",
@@ -63,9 +64,6 @@ atlas_raw <- create_cortical_atlas(
 # ── Post-processing ──────────────────────────────────────────────
 atlas_raw <- atlas_raw |>
   atlas_region_contextual("Unknown", "label")
-
-atlas_raw <- atlas_raw |>
-  atlas_view_gather()
 
 # ── Inspect and save ─────────────────────────────────────────────
 desterieux <- atlas_raw

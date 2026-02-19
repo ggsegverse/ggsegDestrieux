@@ -13,8 +13,8 @@ Destrieux cortical atlas (aparc.a2009s) for the 'ggseg' ecosystem. Provides a 'g
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/ggseg/ggsegDesterieux}
-  \item Report bugs at \url{https://github.com/ggseg/ggsegDesterieux/issues}
+  \item \url{https://github.com/ggsegverse/ggsegDesterieux}
+  \item Report bugs at \url{https://github.com/ggsegverse/ggsegDesterieux/issues}
 }
 
 }
