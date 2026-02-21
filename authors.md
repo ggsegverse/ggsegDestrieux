@@ -11,7 +11,7 @@
 ## Citation
 
 Source:
-[`DESCRIPTION`](https://github.com/ggsegverse/ggsegDesterieux/blob/master/DESCRIPTION)
+[`DESCRIPTION`](https://github.com/ggsegverse/ggsegDesterieux/blob/main/DESCRIPTION)
 
 Mowinckel A, Vidal-Pineiro D (2026). *ggsegDesterieux: Destrieux Atlas
 for the 'ggseg' Ecosystem*. R package version 2.0.0,
