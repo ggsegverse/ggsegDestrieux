@@ -1,0 +1,88 @@
+# ggsegDesterieux
+
+This package contains dataset for plotting the Desterieux cortical atlas
+ggseg and ggseg3d.
+
+Desterieux, Fischl, Dale,& Halgren (2010) Neuroimage. 53(1): 1–15. doi:
+[0.1016/j.neuroimage.2010.06.010](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2937159/)
+
+## Installation
+
+We recommend installing the ggseg-atlases through the ggseg
+[r-universe](https://ggsegverse.r-universe.dev/ui#builds):
+
+``` r
+# Enable this universe
+options(repos = c(
+    ggsegverse = 'https://ggsegverse.r-universe.dev',
+    CRAN = 'https://cloud.r-project.org'))
+
+# Install some packages
+install.packages('ggsegDesterieux')
+```
+
+You can install the released version version from
+[GitHub](https://github.com/) with:
+
+``` r
+# install.packages("remotes")
+remotes::install_github("LCBC-UiO/ggsegDesterieux")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+``` r
+library(ggsegDesterieux)
+```
+
+``` r
+library(ggseg)
+library(ggplot2)
+
+plot(desterieux) +
+  theme(legend.position = "bottom",
+        legend.text = element_text(size = 7)) +
+  guides(fill = guide_legend(ncol = 3))
+```
+
+![](reference/figures/README-unnamed-chunk-5-1.png)
+
+``` r
+library(ggseg3d)
+library(dplyr)
+
+ggseg3d(atlas = desterieux_3d) %>% 
+  pan_camera("right lateral")
+```
+
+![](reference/figures/README-3d-plot.png)
+
+## Source annotation files
+
+The FreeSurfer `aparc.a2009s` annotation files (`lh.aparc.a2009s.annot`,
+`rh.aparc.a2009s.annot`) in `data-raw/` are copied from the fsaverage5
+subject distributed with
+[FreeSurfer](https://surfer.nmr.mgh.harvard.edu/) (v7.4.1), located at
+`$FREESURFER_HOME/subjects/fsaverage5/label/`.
+
+Reference: Destrieux C, Fischl B, Dale A, Halgren E (2010). Automatic
+parcellation of human cortical gyri and sulci using standard anatomical
+nomenclature. *NeuroImage*, 53(1), 1-15.
+<doi:%5B10.1016/j.neuroimage.2010.06.010>\](<https://doi.org/10.1016/j.neuroimage.2010.06.010>)
+
+Please note that the ‘ggsegDesterieux’ project is released with a
+[Contributor Code of
+Conduct](https://ggsegverse.github.io/ggsegDesterieux/CODE_OF_CONDUCT.md).
+By contributing to this project, you agree to abide by its terms.
+
+# Package index
+
+## Atlases
+
+Brain atlases bundled in this package
+
+- [`desterieux()`](https://ggsegverse.github.io/ggsegDesterieux/reference/desterieux.md)
+  : Destrieux Cortical Atlas
+
