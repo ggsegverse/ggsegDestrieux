@@ -22,10 +22,6 @@ Suggests:
     ggplot2,
     testthat (>= 3.0.0),
     vdiffr
-Remotes:
-    ggsegverse/ggseg,
-    ggsegverse/ggseg3d,
-    ggsegverse/ggseg.formats
 URL: https://github.com/ggsegverse/ggsegDesterieux
 BugReports: https://github.com/ggsegverse/ggsegDesterieux/issues
 Roxygen: list(markdown = TRUE)
