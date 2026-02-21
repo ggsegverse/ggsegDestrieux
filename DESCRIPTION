@@ -13,7 +13,6 @@ Description: Destrieux cortical atlas (aparc.a2009s) for the 'ggseg' ecosystem.
     Provides a 'ggseg_atlas' object with 2D polygon geometry for use with 'ggseg'.
 License: MIT + file LICENSE
 Encoding: UTF-8
-LazyData: true
 Depends:
     R (>= 4.1),
     ggseg.formats

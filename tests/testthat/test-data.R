@@ -1,11 +1,11 @@
 describe("desterieux atlas", {
   it("is a ggseg_atlas", {
-    expect_s3_class(desterieux, "ggseg_atlas")
-    expect_s3_class(desterieux, "cortical_atlas")
+    expect_s3_class(desterieux(), "ggseg_atlas")
+    expect_s3_class(desterieux(), "cortical_atlas")
   })
 
   it("is valid", {
-    expect_true(ggseg.formats::is_ggseg_atlas(desterieux))
+    expect_true(ggseg.formats::is_ggseg_atlas(desterieux()))
   })
 
   it("renders with ggseg", {
@@ -14,13 +14,13 @@ describe("desterieux atlas", {
     skip_if_not_installed("vdiffr")
     p <- ggplot2::ggplot() +
       ggseg::geom_brain(
-        atlas = desterieux,
+        atlas = desterieux(),
         mapping = ggplot2::aes(fill = label),
         position = ggseg::position_brain(hemi ~ view),
         show.legend = FALSE
       ) +
       ggplot2::scale_fill_manual(
-        values = desterieux$palette,
+        values = desterieux()$palette,
         na.value = "grey"
       ) +
       ggplot2::theme_void()

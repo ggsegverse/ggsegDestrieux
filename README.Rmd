@@ -59,7 +59,7 @@ library(ggsegDesterieux)
 library(ggseg)
 library(ggplot2)
 
-plot(desterieux) +
+plot(desterieux()) +
   theme(legend.position = "bottom",
         legend.text = element_text(size = 7)) +
   guides(fill = guide_legend(ncol = 3))
@@ -70,7 +70,7 @@ plot(desterieux) +
 library(ggseg3d)
 library(dplyr)
 
-ggseg3d(atlas = desterieux_3d) %>% 
+ggseg3d(atlas = desterieux()) %>% 
   pan_camera("right lateral")
 ```
 
@@ -78,7 +78,7 @@ ggseg3d(atlas = desterieux_3d) %>%
 library(ggseg3d)
 library(dplyr)
 
-p <- ggseg3d(atlas = desterieux_3d) %>%
+p <- ggseg3d(atlas = desterieux()) %>%
   pan_camera("right lateral") %>%
   plotly::add_annotations( text="Screen capture",
                   legendtitle=TRUE, showarrow=FALSE,
