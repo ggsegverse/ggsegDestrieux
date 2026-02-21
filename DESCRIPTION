@@ -14,7 +14,8 @@ Description: Destrieux cortical atlas (aparc.a2009s) for the 'ggseg' ecosystem.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Depends:
-    R (>= 4.1),
+    R (>= 4.1)
+Imports:
     ggseg.formats
 Suggests:
     ggseg,

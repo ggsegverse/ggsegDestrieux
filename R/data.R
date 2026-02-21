@@ -13,6 +13,7 @@
 #'   \doi{10.1016/j.neuroimage.2010.06.010}
 #'
 #' @return A [ggseg.formats::ggseg_atlas] object (cortical).
+#' @import ggseg.formats
 #' @export
 #' @examples
 #' desterieux()
