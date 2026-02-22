@@ -2,21 +2,22 @@
 format: gfm
 ---
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
+<!-- README.md is generated from README.qmd. Please edit that file -->
 
 ```{r}
+#| label: setup
 #| include: false
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
   fig.path = "man/figures/README-",
-  fig.width = 6,
   out.width = "100%",
+  fig.width = 10,
   fig.retina = 3
 )
 ```
 
-# ggsegdestrieux <img src='man/figures/logo.png' align="right" height="138.5" />
+# ggsegDestrieux <img src='man/figures/logo.png' align="right" height="138.5" />
 
 <!-- badges: start -->
 [![DOI](https://zenodo.org/badge/250272332.svg)](https://zenodo.org/badge/latestdoi/250272332)
@@ -24,82 +25,52 @@ knitr::opts_chunk$set(
 [![R build status](https://github.com/ggsegverse/ggsegdestrieux/workflows/R-CMD-check/badge.svg)](https://github.com/ggsegverse/ggsegdestrieux/actions)
 <!-- badges: end -->
 
-This package contains dataset for plotting the destrieux cortical atlas ggseg and ggseg3d. 
+This package contains dataset for plotting the Destrieux cortical atlas for ggseg.
 
-destrieux, Fischl, Dale,& Halgren (2010) Neuroimage. 53(1): 1–15. doi: [0.1016/j.neuroimage.2010.06.010](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2937159/)
+Destrieux, Fischl, Dale, & Halgren (2010) Neuroimage. 53(1): 1-15. doi: [10.1016/j.neuroimage.2010.06.010](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2937159/)
 
 ## Installation
 
-We recommend installing the ggseg-atlases through the ggsegverse [r-universe](https://ggseg.r-universe.dev/ui#builds):
+We recommend installing the ggseg-atlases through the ggseg [r-universe](https://ggseg.r-universe.dev/ui#builds):
 
 ```{r}
+#| label: install-r-universe
 #| eval: false
-# Enable this universe
-options(
-  repos = c(
-    ggsegverse = 'https://ggseg.r-universe.dev',
-    CRAN = 'https://cloud.r-project.org'
-  )
-)
+options(repos = c(
+  ggseg = "https://ggseg.r-universe.dev",
+  CRAN = "https://cloud.r-project.org"
+))
 
-# Install some packages
-install.packages('ggsegDestrieux')
+install.packages("ggsegDestrieux")
 ```
 
-You can install the released version version from [GitHub](https://github.com/) with:
+You can install from [GitHub](https://github.com/) with:
 
-```{r}
-#| eval: false
+``` r
 # install.packages("remotes")
 remotes::install_github("ggsegverse/ggsegDestrieux")
 ```
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
 ```{r}
-#| label: chunk-4
-library(ggsegDestrieux)
-```
-
-```{r}
+#| label: 2d-plot
 #| fig-height: 10
+library(ggsegDestrieux)
 library(ggseg)
 library(ggplot2)
 
-plot(destrieux()) +
-  theme(legend.position = "bottom", legend.text = element_text(size = 7)) +
-  guides(fill = guide_legend(ncol = 3))
-
+ggplot() +
+  geom_brain(
+    atlas = destrieux(),
+    mapping = aes(fill = label),
+    position = position_brain(hemi ~ view),
+    show.legend = FALSE
+  ) +
+  scale_fill_manual(values = destrieux()$palette, na.value = "grey") +
+  theme_void()
 ```
 
-```{r}
-#| label: noneval
-#| eval: false
-library(ggseg3d)
-library(dplyr)
-
-ggseg3d(atlas = destrieux()) |>
-  pan_camera("right lateral")
-```
-
-```{r}
-#| label: orca
-#| include: false
-library(ggseg3d)
-library(dplyr)
-
-p <- ggseg3d(atlas = destrieux()) |>
-  pan_camera("right lateral") |>
-  snapshot_brain("man/figures/README-3d-plot.png")
-```
-
-```{r}
-#| label: incl
-#| echo: false
-knitr::include_graphics("man/figures/README-3d-plot.png")
-```
-
-Please note that the 'ggsegdestrieux' project is released with a
+Please note that the 'ggsegDestrieux' project is released with a
 [Contributor Code of Conduct](CODE_OF_CONDUCT.md).
 By contributing to this project, you agree to abide by its terms.
