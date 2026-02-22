@@ -4,5 +4,5 @@
 
 Brain atlases bundled in this package
 
-- [`desterieux()`](https://ggsegverse.github.io/ggsegDesterieux/reference/desterieux.md)
+- [`destrieux()`](https://ggsegverse.github.io/ggsegdestrieux/reference/desterieux.md)
   : Destrieux Cortical Atlas

@@ -7,7 +7,7 @@ Brain atlas for the Destrieux cortical parcellation (aparc.a2009s) with
 ## Usage
 
 ``` r
-desterieux()
+destrieux()
 ```
 
 ## Value
@@ -26,7 +26,7 @@ of human cortical gyri and sulci using standard anatomical nomenclature.
 ## Examples
 
 ``` r
-desterieux()
+destrieux()
 #> 
 #> ── desterieux ggseg atlas ──────────────────────────────────────────────────────
 #> Type: cortical

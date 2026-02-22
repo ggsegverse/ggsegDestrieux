@@ -11,16 +11,16 @@
 ## Citation
 
 Source:
-[`DESCRIPTION`](https://github.com/ggsegverse/ggsegDesterieux/blob/main/DESCRIPTION)
+[`DESCRIPTION`](https://github.com/ggsegverse/ggsegdestrieux/blob/main/DESCRIPTION)
 
-Mowinckel A, Vidal-Pineiro D (2026). *ggsegDesterieux: Destrieux Atlas
-for the 'ggseg' Ecosystem*. R package version 2.0.0,
-<https://github.com/ggsegverse/ggsegDesterieux>.
+Mowinckel A, Vidal-Pineiro D (2026). *ggsegDestrieux: Destrieux Atlas
+for the 'ggsegverse' Ecosystem*. R package version 2.0.1,
+<https://github.com/ggsegverse/ggsegdestrieux>.
 
     @Manual{,
-      title = {ggsegDesterieux: Destrieux Atlas for the 'ggseg' Ecosystem},
+      title = {ggsegDestrieux: Destrieux Atlas for the 'ggsegverse' Ecosystem},
       author = {Athanasia Mo Mowinckel and Didac Vidal-Pineiro},
       year = {2026},
-      note = {R package version 2.0.0},
-      url = {https://github.com/ggsegverse/ggsegDesterieux},
+      note = {R package version 2.0.1},
+      url = {https://github.com/ggsegverse/ggsegdestrieux},
     }

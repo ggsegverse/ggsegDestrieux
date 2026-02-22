@@ -1,4 +1,4 @@
-# ggsegDesterieux: Destrieux Atlas for the 'ggseg' Ecosystem
+# ggsegdestrieux: Destrieux Atlas for the 'ggseg' Ecosystem
 
 Destrieux cortical atlas (aparc.a2009s) for the 'ggseg' ecosystem.
 Provides a 'ggseg_atlas' object with 2D polygon geometry for use with
@@ -8,9 +8,9 @@ Provides a 'ggseg_atlas' object with 2D polygon geometry for use with
 
 Useful links:
 
-- <https://github.com/ggsegverse/ggsegDesterieux>
+- <https://github.com/ggsegverse/ggsegdestrieux>
 
-- Report bugs at <https://github.com/ggsegverse/ggsegDesterieux/issues>
+- Report bugs at <https://github.com/ggsegverse/ggsegdestrieux/issues>
 
 ## Author
 
