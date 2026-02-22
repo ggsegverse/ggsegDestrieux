@@ -1,4 +1,4 @@
-Package: ggsegDesterieux
+Package: ggsegDestrieux
 Title: Destrieux Atlas for the 'ggseg' Ecosystem
 Version: 2.0.0
 Authors@R: c(person("Athanasia Mo", "Mowinckel",
@@ -23,8 +23,8 @@ Suggests:
     ggplot2,
     testthat (>= 3.0.0),
     vdiffr
-URL: https://github.com/ggsegverse/ggsegDesterieux
-BugReports: https://github.com/ggsegverse/ggsegDesterieux/issues
+URL: https://github.com/ggsegverse/ggsegDestrieux
+BugReports: https://github.com/ggsegverse/ggsegDestrieux/issues
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
 Config/testthat/edition: 3

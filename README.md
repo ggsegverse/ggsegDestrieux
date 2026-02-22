@@ -1,26 +1,27 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# ggsegDesterieux <img src='man/figures/logo.png' align="right" height="138.5" />
+# ggsegDestrieux <img src='man/figures/logo.png' align="right" height="138.5" />
 
 <!-- badges: start -->
 
 [![DOI](https://zenodo.org/badge/250272332.svg)](https://zenodo.org/badge/latestdoi/250272332)
-[![Codecov test
-coverage](https://codecov.io/gh/LCBC-UiO/ggsegDesterieux/branch/master/graph/badge.svg)](https://codecov.io/gh/LCBC-UiO/ggsegDesterieux?branch=master)
-[![R build
-status](https://github.com/LCBC-UiO/ggsegDesterieux/workflows/R-CMD-check/badge.svg)](https://github.com/LCBC-UiO/ggsegDesterieux/actions)
+[![R-CMD-check](https://github.com/ggsegverse/ggsegDestrieux/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ggsegverse/ggsegDestrieux/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-This package contains dataset for plotting the Desterieux cortical atlas
-ggseg and ggseg3d.
+This package contains dataset for plotting the Destrieux cortical atlas
+with ggseg and ggseg3d.
 
-Desterieux, Fischl, Dale,& Halgren (2010) Neuroimage. 53(1): 1–15. doi:
-[0.1016/j.neuroimage.2010.06.010](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2937159/)
+Destrieux, Fischl, Dale, & Halgren (2010) Neuroimage. 53(1): 1–15. doi:
+[10.1016/j.neuroimage.2010.06.010](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2937159/)
+
+To learn how to use these atlases, please look at the documentation for
+[ggseg](https://ggsegverse.github.io/ggseg/) and
+[ggseg3d](https://ggsegverse.github.io/ggseg3d).
 
 ## Installation
 
-We recommend installing the ggseg-atlases through the ggseg
+We recommend installing the ggseg-atlases through the ggsegverse
 [r-universe](https://ggsegverse.r-universe.dev/ui#builds):
 
 ``` r
@@ -30,7 +31,7 @@ options(repos = c(
     CRAN = 'https://cloud.r-project.org'))
 
 # Install some packages
-install.packages('ggsegDesterieux')
+install.packages('ggsegDestrieux')
 ```
 
 You can install the released version version from
@@ -38,51 +39,36 @@ You can install the released version version from
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("LCBC-UiO/ggsegDesterieux")
-```
-
-## Example
-
-This is a basic example which shows you how to solve a common problem:
-
-``` r
-library(ggsegDesterieux)
+remotes::install_github("ggsegverse/ggsegDestrieux")
 ```
 
 ``` r
 library(ggseg)
+library(ggsegDestrieux)
 library(ggplot2)
 
-plot(desterieux) +
-  theme(legend.position = "bottom",
-        legend.text = element_text(size = 7)) +
-  guides(fill = guide_legend(ncol = 3))
+ggplot() +
+  geom_brain(
+    atlas = destrieux(),
+    mapping = aes(fill = label),
+    position = position_brain(hemi ~ view),
+    show.legend = FALSE
+  ) +
+  scale_fill_manual(values = destrieux()$palette, na.value = "grey") +
+  theme_void()
 ```
 
-<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-4-1.png" alt="" width="100%" />
 
 ``` r
 library(ggseg3d)
-library(dplyr)
 
-ggseg3d(atlas = desterieux_3d) %>% 
+ggseg3d(atlas = destrieux()) |>
   pan_camera("right lateral")
 ```
 
-<img src="man/figures/README-3d-plot.png" width="100%" />
+<img src="man/figures/README-3d-plot.png" alt="" width="100%" />
 
-## Source annotation files
-
-The FreeSurfer `aparc.a2009s` annotation files (`lh.aparc.a2009s.annot`,
-`rh.aparc.a2009s.annot`) in `data-raw/` are copied from the fsaverage5
-subject distributed with [FreeSurfer](https://surfer.nmr.mgh.harvard.edu/)
-(v7.4.1), located at `$FREESURFER_HOME/subjects/fsaverage5/label/`.
-
-Reference: Destrieux C, Fischl B, Dale A, Halgren E (2010). Automatic
-parcellation of human cortical gyri and sulci using standard anatomical
-nomenclature. *NeuroImage*, 53(1), 1-15.
-doi:[10.1016/j.neuroimage.2010.06.010](https://doi.org/10.1016/j.neuroimage.2010.06.010)
-
-Please note that the 'ggsegDesterieux' project is released with a
+Please note that the ‘ggsegDestrieux’ project is released with a
 [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to
 this project, you agree to abide by its terms.

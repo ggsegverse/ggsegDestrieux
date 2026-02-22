@@ -16,5 +16,5 @@
 #' @import ggseg.formats
 #' @export
 #' @examples
-#' desterieux()
-desterieux <- function() .desterieux
+#' destrieux()
+destrieux <- function() .destrieux
