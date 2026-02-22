@@ -1,6 +1,6 @@
-# Create Desterieux Cortical Atlas
+# Create destrieux Cortical Atlas
 #
-# Recreates the desterieux cortical atlas from FreeSurfer's
+# Recreates the destrieux cortical atlas from FreeSurfer's
 # aparc.a2009s.annot annotation on fsaverage5 using ggsegExtra.
 #
 # Requirements:
@@ -38,7 +38,8 @@ if (!dir.exists(fsaverage5_dir)) {
 }
 
 annot_files <- file.path(
-  fsaverage5_dir, "label",
+  fsaverage5_dir,
+  "label",
   c("lh.aparc.a2009s.annot", "rh.aparc.a2009s.annot")
 )
 
@@ -49,11 +50,11 @@ for (f in annot_files) {
 }
 
 # ── Create atlas ─────────────────────────────────────────────────
-cli::cli_h1("Creating desterieux cortical atlas")
+cli::cli_h1("Creating destrieux cortical atlas")
 
 atlas_raw <- create_cortical_from_annotation(
   input_annot = annot_files,
-  atlas_name = "desterieux",
+  atlas_name = "destrieux",
   output_dir = "data-raw",
   tolerance = 1,
   smoothness = 2,
@@ -66,16 +67,14 @@ atlas_raw <- atlas_raw |>
   atlas_region_contextual("Unknown", "label")
 
 # ── Inspect and save ─────────────────────────────────────────────
-desterieux <- atlas_raw
+.destrieux <- atlas_raw
 
-cli::cli_alert_success("Atlas created with {nrow(desterieux$core)} regions")
-print(desterieux)
+cli::cli_alert_success("Atlas created with {nrow(destrieux$core)} regions")
+print(.destrieux)
 
-brain_pals <- stats::setNames(
-  list(desterieux$palette),
-  desterieux$atlas
+usethis::use_data(
+  .destrieux,
+  overwrite = TRUE,
+  compress = "xz",
+  internal = TRUE
 )
-save(brain_pals, file = here::here("R/sysdata.rda"), compress = "xz")
-
-usethis::use_data(desterieux, overwrite = TRUE, compress = "xz")
-cli::cli_alert_success("Saved to data/desterieux.rda")

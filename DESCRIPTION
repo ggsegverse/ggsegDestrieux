@@ -1,31 +1,30 @@
-Package: ggsegDesterieux
+Package: ggsegDestrieux
 Title: Destrieux Atlas for the 'ggseg' Ecosystem
 Version: 2.0.0
-Authors@R: c(person("Athanasia Mo", "Mowinckel",
-                    email = "a.m.mowinckel@psykologi.uio.no",
-                    role = c("aut", "cre"),
-                    comment = c(ORCID = "0000-0002-5756-0223")),
-            person("Didac", "Vidal-Pineiro",
-                    email = "d.v.pineiro@psykologi.uio.no",
-                    role = c("aut"),
-                    comment = c(ORCID = "0000-0001-9997-9156")))
-Description: Destrieux cortical atlas (aparc.a2009s) for the 'ggseg' ecosystem.
-    Provides a 'ggseg_atlas' object with 2D polygon geometry for use with 'ggseg'.
+Authors@R: c(
+    person("Athanasia Mo", "Mowinckel", , "a.m.mowinckel@psykologi.uio.no", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-5756-0223")),
+    person("Didac", "Vidal-Pineiro", , "d.v.pineiro@psykologi.uio.no", role = "aut",
+           comment = c(ORCID = "0000-0001-9997-9156"))
+  )
+Description: Destrieux cortical atlas (aparc.a2009s) for the 'ggseg'
+    ecosystem.  Provides a 'ggseg_atlas' object with 2D polygon geometry
+    for use with 'ggseg'.
 License: MIT + file LICENSE
-Encoding: UTF-8
+URL: https://github.com/ggsegverse/ggsegdestrieux
+BugReports: https://github.com/ggsegverse/ggsegdestrieux/issues
 Depends:
     R (>= 4.1)
 Imports:
     ggseg.formats
 Suggests:
+    ggplot2,
     ggseg,
     ggseg3d,
-    ggplot2,
     testthat (>= 3.0.0),
     vdiffr
-URL: https://github.com/ggsegverse/ggsegDesterieux
-BugReports: https://github.com/ggsegverse/ggsegDesterieux/issues
+Config/Needs/website: ggsegverse/ggseg.docs
+Config/testthat/edition: 3
+Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
-Config/testthat/edition: 3
-Config/Needs/website: ggsegverse/ggseg.docs

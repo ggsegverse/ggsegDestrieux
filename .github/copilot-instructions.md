@@ -1,4 +1,4 @@
-# Quick instructions for AI coding agents working on ggsegDesterieux
+# Quick instructions for AI coding agents working on ggsegdestrieux
 
 This is a ggseg 2.0 atlas package providing brain atlas data for the ggseg
 ecosystem. It is a data-only package with no custom functions.
@@ -7,7 +7,7 @@ ecosystem. It is a data-only package with no custom functions.
 
 - `data/*.rda` -- Unified `ggseg_atlas` objects (2D + 3D in one object)
 - `R/data.R` -- Roxygen2 documentation for each atlas
-- `R/ggsegDesterieux-package.R` -- Package-level docs, imports ggseg.formats
+- `R/ggsegdestrieux-package.R` -- Package-level docs, imports ggseg.formats
 - `R/sysdata.rda` -- Internal palette data (brain_pals)
 - `data-raw/` -- Scripts that generated/converted the atlas data
 

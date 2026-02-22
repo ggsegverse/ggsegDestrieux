@@ -1,4 +1,4 @@
-# Create Desterieux Cortical Atlas - Robust version
+# Create destrieux Cortical Atlas - Robust version
 #
 # Handles rgl/X11 GL context failures by retrying failed snapshot operations.
 
@@ -20,7 +20,8 @@ fs_dir <- freesurfer::fs_dir()
 fsaverage5_dir <- file.path(fs_dir, "subjects", "fsaverage5")
 
 annot_files <- file.path(
-  fsaverage5_dir, "label",
+  fsaverage5_dir,
+  "label",
   c("lh.aparc.a2009s.annot", "rh.aparc.a2009s.annot")
 )
 
@@ -36,7 +37,7 @@ while (attempt < max_attempts && !success) {
     {
       atlas_raw <- create_cortical_atlas(
         input_annot = annot_files,
-        atlas_name = "desterieux",
+        atlas_name = "destrieux",
         output_dir = "data-raw",
         tolerance = 1,
         smoothness = 2,
@@ -70,16 +71,16 @@ atlas_raw <- atlas_raw |>
 atlas_raw <- atlas_raw |>
   atlas_view_gather()
 
-desterieux <- atlas_raw
+destrieux <- atlas_raw
 
-cli::cli_alert_success("Atlas created with {nrow(desterieux$core)} regions")
-print(desterieux)
+cli::cli_alert_success("Atlas created with {nrow(destrieux$core)} regions")
+print(destrieux)
 
 brain_pals <- stats::setNames(
-  list(desterieux$palette),
-  desterieux$atlas
+  list(destrieux$palette),
+  destrieux$atlas
 )
 save(brain_pals, file = here::here("R/sysdata.rda"), compress = "xz")
 
-usethis::use_data(desterieux, overwrite = TRUE, compress = "xz")
-cli::cli_alert_success("Saved to data/desterieux.rda")
+usethis::use_data(destrieux, overwrite = TRUE, compress = "xz")
+cli::cli_alert_success("Saved to data/destrieux.rda")

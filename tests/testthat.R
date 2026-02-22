@@ -1,4 +1,4 @@
 library(testthat)
-library(ggsegDesterieux)
+library(ggsegdestrieux)
 
-test_check("ggsegDesterieux")
+test_check("ggsegdestrieux")

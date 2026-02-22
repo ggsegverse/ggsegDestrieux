@@ -1,21 +1,21 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# ggsegDesterieux <img src='man/figures/logo.png' align="right" height="138.5" />
+# ggsegdestrieux <img src='man/figures/logo.png' align="right" height="138.5" />
 
 <!-- badges: start -->
 
 [![DOI](https://zenodo.org/badge/250272332.svg)](https://zenodo.org/badge/latestdoi/250272332)
 [![Codecov test
-coverage](https://codecov.io/gh/LCBC-UiO/ggsegDesterieux/branch/master/graph/badge.svg)](https://codecov.io/gh/LCBC-UiO/ggsegDesterieux?branch=master)
+coverage](https://codecov.io/gh/LCBC-UiO/ggsegdestrieux/branch/master/graph/badge.svg)](https://codecov.io/gh/LCBC-UiO/ggsegdestrieux?branch=master)
 [![R build
-status](https://github.com/LCBC-UiO/ggsegDesterieux/workflows/R-CMD-check/badge.svg)](https://github.com/LCBC-UiO/ggsegDesterieux/actions)
+status](https://github.com/LCBC-UiO/ggsegdestrieux/workflows/R-CMD-check/badge.svg)](https://github.com/LCBC-UiO/ggsegdestrieux/actions)
 <!-- badges: end -->
 
-This package contains dataset for plotting the Desterieux cortical atlas
+This package contains dataset for plotting the destrieux cortical atlas
 ggseg and ggseg3d.
 
-Desterieux, Fischl, Dale,& Halgren (2010) Neuroimage. 53(1): 1–15. doi:
+destrieux, Fischl, Dale,& Halgren (2010) Neuroimage. 53(1): 1–15. doi:
 [0.1016/j.neuroimage.2010.06.010](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2937159/)
 
 ## Installation
@@ -30,7 +30,7 @@ options(repos = c(
     CRAN = 'https://cloud.r-project.org'))
 
 # Install some packages
-install.packages('ggsegDesterieux')
+install.packages('ggsegdestrieux')
 ```
 
 You can install the released version version from
@@ -38,7 +38,7 @@ You can install the released version version from
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("LCBC-UiO/ggsegDesterieux")
+remotes::install_github("LCBC-UiO/ggsegdestrieux")
 ```
 
 ## Example
@@ -46,14 +46,14 @@ remotes::install_github("LCBC-UiO/ggsegDesterieux")
 This is a basic example which shows you how to solve a common problem:
 
 ``` r
-library(ggsegDesterieux)
+library(ggsegdestrieux)
 ```
 
 ``` r
 library(ggseg)
 library(ggplot2)
 
-plot(desterieux) +
+plot(destrieux) +
   theme(legend.position = "bottom",
         legend.text = element_text(size = 7)) +
   guides(fill = guide_legend(ncol = 3))
@@ -65,7 +65,7 @@ plot(desterieux) +
 library(ggseg3d)
 library(dplyr)
 
-ggseg3d(atlas = desterieux_3d) %>% 
+ggseg3d(atlas = destrieux_3d) %>% 
   pan_camera("right lateral")
 ```
 
@@ -83,6 +83,6 @@ parcellation of human cortical gyri and sulci using standard anatomical
 nomenclature. *NeuroImage*, 53(1), 1-15.
 doi:[10.1016/j.neuroimage.2010.06.010](https://doi.org/10.1016/j.neuroimage.2010.06.010)
 
-Please note that the 'ggsegDesterieux' project is released with a
+Please note that the 'ggsegdestrieux' project is released with a
 [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to
 this project, you agree to abide by its terms.
