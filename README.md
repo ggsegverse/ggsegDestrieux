@@ -8,9 +8,9 @@
 
 [![DOI](https://zenodo.org/badge/250272332.svg)](https://zenodo.org/badge/latestdoi/250272332)
 [![Codecov test
-coverage](https://codecov.io/gh/ggsegverse/ggsegdestrieux/branch/master/graph/badge.svg)](https://codecov.io/gh/ggsegverse/ggsegdestrieux?branch=master)
+coverage](https://codecov.io/gh/ggsegverse/ggsegDestrieux/branch/master/graph/badge.svg)](https://codecov.io/gh/ggsegverse/ggsegDestrieux?branch=master)
 [![R build
-status](https://github.com/ggsegverse/ggsegdestrieux/workflows/R-CMD-check/badge.svg)](https://github.com/ggsegverse/ggsegdestrieux/actions)
+status](https://github.com/ggsegverse/ggsegDestrieux/workflows/R-CMD-check/badge.svg)](https://github.com/ggsegverse/ggsegDestrieux/actions)
 <!-- badges: end -->
 
 This package contains dataset for plotting the Destrieux cortical atlas

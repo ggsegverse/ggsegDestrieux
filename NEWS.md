@@ -1,4 +1,4 @@
-# ggsegdestrieux 2.0.0
+# ggsegDestrieux 2.0.0
 
 ## Breaking changes
 
@@ -13,7 +13,7 @@
 
 * Package URLs updated from `ggsegverse` to `ggseg` GitHub organisation.
 
-# ggsegdestrieux 1.0.01
+# ggsegDestrieux 1.0.01
 
 * adapted atlas to ggseg >= 1.6.0
 * Added a `NEWS.md` file to track changes to the package.

@@ -4,7 +4,7 @@ library(ggplot2)
 devtools::load_all(".")
 
 atlas <- destrieux
-pkgname <- "ggsegdestrieux"
+pkgname <- "ggsegDestrieux"
 
 p <- ggseg(
         atlas = atlas,

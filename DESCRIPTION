@@ -1,6 +1,6 @@
 Package: ggsegDestrieux
 Title: Destrieux Atlas for the 'ggsegverse' Ecosystem
-Version: 2.0.1
+Version: 2.0.2
 Authors@R: c(
     person("Athanasia Mo", "Mowinckel", , "a.m.mowinckel@psykologi.uio.no", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-5756-0223")),
@@ -11,8 +11,8 @@ Description: Destrieux cortical atlas (aparc.a2009s) for the 'ggsegverse'
     ecosystem.  Provides a 'ggseg_atlas' object with 2D polygon geometry
     for use with 'ggsegverse'.
 License: MIT + file LICENSE
-URL: https://github.com/ggsegverse/ggsegdestrieux
-BugReports: https://github.com/ggsegverse/ggsegdestrieux/issues
+URL: https://github.com/ggsegverse/ggsegDestrieux
+BugReports: https://github.com/ggsegverse/ggsegDestrieux/issues
 Depends:
     R (>= 4.1)
 Imports:
