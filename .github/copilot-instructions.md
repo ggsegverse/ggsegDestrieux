@@ -30,4 +30,4 @@ class. The atlas objects work with both `ggseg::geom_brain()` (2D) and
 - Roxygen2 with markdown enabled
 - Tests use describe/it BDD style with vdiffr for visual regression
 - NEWS.md only tracks user-facing changes (not CI/pkgdown changes)
-- URLs point to `ggseg` GitHub org (not LCBC-UiO)
+- URLs point to `ggseg` GitHub org (not ggsegverse)

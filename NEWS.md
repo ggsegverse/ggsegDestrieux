@@ -11,7 +11,7 @@
 
 * `ggseg.formats` is now a hard dependency (in Depends).
 
-* Package URLs updated from `LCBC-UiO` to `ggseg` GitHub organisation.
+* Package URLs updated from `ggsegverse` to `ggseg` GitHub organisation.
 
 # ggsegdestrieux 1.0.01
 
