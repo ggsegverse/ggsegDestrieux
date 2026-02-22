@@ -49,5 +49,5 @@ ggplot() +
 
 Please note that the ‘ggsegDestrieux’ project is released with a
 [Contributor Code of
-Conduct](https://ggsegverse.github.io/ggsegdestrieux/CODE_OF_CONDUCT.md).
+Conduct](https://ggsegverse.github.io/ggsegDestrieux/CODE_OF_CONDUCT.md).
 By contributing to this project, you agree to abide by its terms.

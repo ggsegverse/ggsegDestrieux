@@ -49,7 +49,7 @@ ggplot() +
 
 Please note that the ‘ggsegDestrieux’ project is released with a
 [Contributor Code of
-Conduct](https://ggsegverse.github.io/ggsegdestrieux/CODE_OF_CONDUCT.md).
+Conduct](https://ggsegverse.github.io/ggsegDestrieux/CODE_OF_CONDUCT.md).
 By contributing to this project, you agree to abide by its terms.
 
 # Package index
@@ -58,6 +58,6 @@ By contributing to this project, you agree to abide by its terms.
 
 Brain atlases bundled in this package
 
-- [`destrieux()`](https://ggsegverse.github.io/ggsegdestrieux/reference/destrieux.md)
+- [`destrieux()`](https://ggsegverse.github.io/ggsegDestrieux/reference/destrieux.md)
   : Destrieux Cortical Atlas
 
