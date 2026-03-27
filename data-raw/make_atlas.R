@@ -32,7 +32,7 @@ destrieux <- create_cortical_from_annotation(
   skip_existing = TRUE,
   cleanup = FALSE
 ) |>
-  atlas_region_contextual("Unknown", "label")
+  atlas_region_contextual("Unknown|Medial_wall", "label")
 
 print(destrieux)
 plot(destrieux)
