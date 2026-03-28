@@ -35,3 +35,10 @@ plot(destrieux()) +
 Destrieux cortical parcellation (aparc.a2009s) with 75 regions per hemisphere (Destrieux et al., 2010).
 
 ![destrieux](man/figures/destrieux_snapshot.png)
+
+## Data source
+
+Built-in FreeSurfer annotation (`aparc.a2009s.annot`) from the fsaverage5 subject.
+
+- **Reference**: Destrieux et al. (2010) [doi:10.1016/j.neuroimage.2010.06.010](https://doi.org/10.1016/j.neuroimage.2010.06.010)
+- **Date obtained**: 2026-02-21 (FreeSurfer 7.4.1)
