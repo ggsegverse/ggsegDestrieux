@@ -17,4 +17,5 @@
 #' @export
 #' @examples
 #' destrieux()
+#' plot(destrieux())
 destrieux <- function() .destrieux
