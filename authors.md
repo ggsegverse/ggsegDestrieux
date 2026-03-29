@@ -14,13 +14,13 @@ Source:
 [`DESCRIPTION`](https://github.com/ggsegverse/ggsegDestrieux/blob/main/DESCRIPTION)
 
 Mowinckel A, Vidal-Pineiro D (2026). *ggsegDestrieux: Destrieux Atlas
-for the 'ggsegverse' Ecosystem*. R package version 2.0.3,
+for the 'ggsegverse' Ecosystem*. R package version 2.0.4,
 <https://github.com/ggsegverse/ggsegDestrieux>.
 
     @Manual{,
       title = {ggsegDestrieux: Destrieux Atlas for the 'ggsegverse' Ecosystem},
       author = {Athanasia Mo Mowinckel and Didac Vidal-Pineiro},
       year = {2026},
-      note = {R package version 2.0.3},
+      note = {R package version 2.0.4},
       url = {https://github.com/ggsegverse/ggsegDestrieux},
     }
