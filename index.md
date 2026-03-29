@@ -1,53 +1,35 @@
 # ggsegDestrieux
 
-This package contains dataset for plotting the Destrieux cortical atlas
-for ggseg.
-
-Destrieux, Fischl, Dale, & Halgren (2010) Neuroimage. 53(1): 1-15. doi:
-[10.1016/j.neuroimage.2010.06.010](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2937159/)
+Destrieux Atlas for the ggsegverse Ecosystem.
 
 ## Installation
 
-We recommend installing the ggseg-atlases through the ggseg
-[r-universe](https://ggseg.r-universe.dev/ui#builds):
-
 ``` r
-options(repos = c(
-  ggseg = "https://ggseg.r-universe.dev",
-  CRAN = "https://cloud.r-project.org"
-))
+# From r-universe
+install.packages("ggsegDestrieux", repos = "https://ggsegverse.r-universe.dev")
 
-install.packages("ggsegDestrieux")
-```
-
-You can install from [GitHub](https://github.com/) with:
-
-``` r
+# From GitHub
 # install.packages("remotes")
 remotes::install_github("ggsegverse/ggsegDestrieux")
 ```
 
-## Example
+## Atlases
+
+### destrieux
+
+Destrieux cortical parcellation (aparc.a2009s) with 75 regions per
+hemisphere.
 
 ``` r
 library(ggsegDestrieux)
-library(ggseg)
-library(ggplot2)
-
-ggplot() +
-  geom_brain(
-    atlas = destrieux(),
-    mapping = aes(fill = label),
-    position = position_brain(hemi ~ view),
-    show.legend = FALSE
-  ) +
-  scale_fill_manual(values = destrieux()$palette, na.value = "grey") +
-  theme_void()
+plot(destrieux())
 ```
 
-![](reference/figures/README-2d-plot-1.png)
+![](reference/figures/README-destrieux-1.png) \## Data source
 
-Please note that the ‘ggsegDestrieux’ project is released with a
-[Contributor Code of
-Conduct](https://ggsegverse.github.io/ggsegDestrieux/CODE_OF_CONDUCT.md).
-By contributing to this project, you agree to abide by its terms.
+Built-in FreeSurfer annotation (`aparc.a2009s.annot`) from fsaverage5.
+
+- **Reference**: Destrieux et al. (2010)
+  [doi:10.1016/j.neuroimage.2010.06.010](https://doi.org/10.1016/j.neuroimage.2010.06.010)
+
+- **Date obtained**: 2026-02-21

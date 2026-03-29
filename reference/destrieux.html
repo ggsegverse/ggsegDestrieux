@@ -13,7 +13,7 @@ for ggseg::geom_brain()."><meta property="og:image" content="https://ggsegverse.
 
     <a class="navbar-brand me-2" href="../index.html">ggsegDestrieux</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">2.0.2</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">2.0.3</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -72,16 +72,16 @@ standard anatomical nomenclature.
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">destrieux</span><span class="op">(</span><span class="op">)</span></span></span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">──</span> <span style="font-weight: bold;">desterieux ggseg atlas</span> <span style="color: #00BBBB;">──────────────────────────────────────────────────────</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">──</span> <span style="font-weight: bold;">destrieux ggseg atlas</span> <span style="color: #00BBBB;">───────────────────────────────────────────────────────</span></span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="font-weight: bold;">Type: cortical</span></span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="font-weight: bold;">Regions:</span> 75</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="font-weight: bold;">Regions:</span> 74</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="font-weight: bold;">Hemispheres:</span> left, right</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="font-weight: bold;">Views:</span> inferior, lateral, medial, superior</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="font-weight: bold;">Palette:</span> <span style="color: #00BB00;">✔</span></span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="font-weight: bold;">Rendering:</span> <span style="color: #00BB00;">✔</span> ggseg</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> ggseg3d (vertices)</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> ────────────────────────────────────────────────────────────────────────────────</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 150 × 3</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 148 × 3</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>     hemi  region                    label                       </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                       </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">  1</span> left  G_and_S_frontomargin      lh_G_and_S_frontomargin     </span>
@@ -125,115 +125,113 @@ standard anatomical nomenclature.
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 39</span> left  Lat_Fis-ant-Horizont      lh_Lat_Fis-ant-Horizont     </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 40</span> left  Lat_Fis-ant-Vertical      lh_Lat_Fis-ant-Vertical     </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 41</span> left  Lat_Fis-post              lh_Lat_Fis-post             </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 42</span> left  Medial_wall               lh_Medial_wall              </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 43</span> left  Pole_occipital            lh_Pole_occipital           </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 44</span> left  Pole_temporal             lh_Pole_temporal            </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 45</span> left  S_calcarine               lh_S_calcarine              </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 46</span> left  S_central                 lh_S_central                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 47</span> left  S_cingul-Marginalis       lh_S_cingul-Marginalis      </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 48</span> left  S_circular_insula_ant     lh_S_circular_insula_ant    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 49</span> left  S_circular_insula_inf     lh_S_circular_insula_inf    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 50</span> left  S_circular_insula_sup     lh_S_circular_insula_sup    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 51</span> left  S_collat_transv_ant       lh_S_collat_transv_ant      </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 52</span> left  S_collat_transv_post      lh_S_collat_transv_post     </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 53</span> left  S_front_inf               lh_S_front_inf              </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 54</span> left  S_front_middle            lh_S_front_middle           </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 55</span> left  S_front_sup               lh_S_front_sup              </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 56</span> left  S_interm_prim-Jensen      lh_S_interm_prim-Jensen     </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 57</span> left  S_intrapariet_and_P_trans lh_S_intrapariet_and_P_trans</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 58</span> left  S_oc_middle_and_Lunatus   lh_S_oc_middle_and_Lunatus  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 59</span> left  S_oc_sup_and_transversal  lh_S_oc_sup_and_transversal </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 60</span> left  S_occipital_ant           lh_S_occipital_ant          </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 61</span> left  S_oc-temp_lat             lh_S_oc-temp_lat            </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 62</span> left  S_oc-temp_med_and_Lingual lh_S_oc-temp_med_and_Lingual</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 63</span> left  S_orbital_lateral         lh_S_orbital_lateral        </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 64</span> left  S_orbital_med-olfact      lh_S_orbital_med-olfact     </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 65</span> left  S_orbital-H_Shaped        lh_S_orbital-H_Shaped       </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 66</span> left  S_parieto_occipital       lh_S_parieto_occipital      </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 67</span> left  S_pericallosal            lh_S_pericallosal           </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 68</span> left  S_postcentral             lh_S_postcentral            </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 69</span> left  S_precentral-inf-part     lh_S_precentral-inf-part    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 70</span> left  S_precentral-sup-part     lh_S_precentral-sup-part    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 71</span> left  S_suborbital              lh_S_suborbital             </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 72</span> left  S_subparietal             lh_S_subparietal            </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 73</span> left  S_temporal_inf            lh_S_temporal_inf           </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 74</span> left  S_temporal_sup            lh_S_temporal_sup           </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 75</span> left  S_temporal_transverse     lh_S_temporal_transverse    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 76</span> right G_and_S_frontomargin      rh_G_and_S_frontomargin     </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 77</span> right G_and_S_occipital_inf     rh_G_and_S_occipital_inf    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 78</span> right G_and_S_paracentral       rh_G_and_S_paracentral      </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 79</span> right G_and_S_subcentral        rh_G_and_S_subcentral       </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 80</span> right G_and_S_transv_frontopol  rh_G_and_S_transv_frontopol </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 81</span> right G_and_S_cingul-Ant        rh_G_and_S_cingul-Ant       </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 82</span> right G_and_S_cingul-Mid-Ant    rh_G_and_S_cingul-Mid-Ant   </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 83</span> right G_and_S_cingul-Mid-Post   rh_G_and_S_cingul-Mid-Post  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 84</span> right G_cingul-Post-dorsal      rh_G_cingul-Post-dorsal     </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 85</span> right G_cingul-Post-ventral     rh_G_cingul-Post-ventral    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 86</span> right G_cuneus                  rh_G_cuneus                 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 87</span> right G_front_inf-Opercular     rh_G_front_inf-Opercular    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 88</span> right G_front_inf-Orbital       rh_G_front_inf-Orbital      </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 89</span> right G_front_inf-Triangul      rh_G_front_inf-Triangul     </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 90</span> right G_front_middle            rh_G_front_middle           </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 91</span> right G_front_sup               rh_G_front_sup              </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 92</span> right G_Ins_lg_and_S_cent_ins   rh_G_Ins_lg_and_S_cent_ins  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 93</span> right G_insular_short           rh_G_insular_short          </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 94</span> right G_occipital_middle        rh_G_occipital_middle       </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 95</span> right G_occipital_sup           rh_G_occipital_sup          </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 96</span> right G_oc-temp_lat-fusifor     rh_G_oc-temp_lat-fusifor    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 97</span> right G_oc-temp_med-Lingual     rh_G_oc-temp_med-Lingual    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 98</span> right G_oc-temp_med-Parahip     rh_G_oc-temp_med-Parahip    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 99</span> right G_orbital                 rh_G_orbital                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">100</span> right G_pariet_inf-Angular      rh_G_pariet_inf-Angular     </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">101</span> right G_pariet_inf-Supramar     rh_G_pariet_inf-Supramar    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">102</span> right G_parietal_sup            rh_G_parietal_sup           </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">103</span> right G_postcentral             rh_G_postcentral            </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">104</span> right G_precentral              rh_G_precentral             </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">105</span> right G_precuneus               rh_G_precuneus              </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">106</span> right G_rectus                  rh_G_rectus                 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">107</span> right G_subcallosal             rh_G_subcallosal            </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">108</span> right G_temp_sup-G_T_transv     rh_G_temp_sup-G_T_transv    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">109</span> right G_temp_sup-Lateral        rh_G_temp_sup-Lateral       </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">110</span> right G_temp_sup-Plan_polar     rh_G_temp_sup-Plan_polar    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">111</span> right G_temp_sup-Plan_tempo     rh_G_temp_sup-Plan_tempo    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">112</span> right G_temporal_inf            rh_G_temporal_inf           </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">113</span> right G_temporal_middle         rh_G_temporal_middle        </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">114</span> right Lat_Fis-ant-Horizont      rh_Lat_Fis-ant-Horizont     </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">115</span> right Lat_Fis-ant-Vertical      rh_Lat_Fis-ant-Vertical     </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">116</span> right Lat_Fis-post              rh_Lat_Fis-post             </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">117</span> right Medial_wall               rh_Medial_wall              </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">118</span> right Pole_occipital            rh_Pole_occipital           </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">119</span> right Pole_temporal             rh_Pole_temporal            </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">120</span> right S_calcarine               rh_S_calcarine              </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">121</span> right S_central                 rh_S_central                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">122</span> right S_cingul-Marginalis       rh_S_cingul-Marginalis      </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">123</span> right S_circular_insula_ant     rh_S_circular_insula_ant    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">124</span> right S_circular_insula_inf     rh_S_circular_insula_inf    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">125</span> right S_circular_insula_sup     rh_S_circular_insula_sup    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">126</span> right S_collat_transv_ant       rh_S_collat_transv_ant      </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">127</span> right S_collat_transv_post      rh_S_collat_transv_post     </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">128</span> right S_front_inf               rh_S_front_inf              </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">129</span> right S_front_middle            rh_S_front_middle           </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">130</span> right S_front_sup               rh_S_front_sup              </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">131</span> right S_interm_prim-Jensen      rh_S_interm_prim-Jensen     </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">132</span> right S_intrapariet_and_P_trans rh_S_intrapariet_and_P_trans</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">133</span> right S_oc_middle_and_Lunatus   rh_S_oc_middle_and_Lunatus  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">134</span> right S_oc_sup_and_transversal  rh_S_oc_sup_and_transversal </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">135</span> right S_occipital_ant           rh_S_occipital_ant          </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">136</span> right S_oc-temp_lat             rh_S_oc-temp_lat            </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">137</span> right S_oc-temp_med_and_Lingual rh_S_oc-temp_med_and_Lingual</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">138</span> right S_orbital_lateral         rh_S_orbital_lateral        </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">139</span> right S_orbital_med-olfact      rh_S_orbital_med-olfact     </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">140</span> right S_orbital-H_Shaped        rh_S_orbital-H_Shaped       </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">141</span> right S_parieto_occipital       rh_S_parieto_occipital      </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">142</span> right S_pericallosal            rh_S_pericallosal           </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">143</span> right S_postcentral             rh_S_postcentral            </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">144</span> right S_precentral-inf-part     rh_S_precentral-inf-part    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">145</span> right S_precentral-sup-part     rh_S_precentral-sup-part    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">146</span> right S_suborbital              rh_S_suborbital             </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">147</span> right S_subparietal             rh_S_subparietal            </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">148</span> right S_temporal_inf            rh_S_temporal_inf           </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">149</span> right S_temporal_sup            rh_S_temporal_sup           </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">150</span> right S_temporal_transverse     rh_S_temporal_transverse    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 42</span> left  Pole_occipital            lh_Pole_occipital           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 43</span> left  Pole_temporal             lh_Pole_temporal            </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 44</span> left  S_calcarine               lh_S_calcarine              </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 45</span> left  S_central                 lh_S_central                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 46</span> left  S_cingul-Marginalis       lh_S_cingul-Marginalis      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 47</span> left  S_circular_insula_ant     lh_S_circular_insula_ant    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 48</span> left  S_circular_insula_inf     lh_S_circular_insula_inf    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 49</span> left  S_circular_insula_sup     lh_S_circular_insula_sup    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 50</span> left  S_collat_transv_ant       lh_S_collat_transv_ant      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 51</span> left  S_collat_transv_post      lh_S_collat_transv_post     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 52</span> left  S_front_inf               lh_S_front_inf              </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 53</span> left  S_front_middle            lh_S_front_middle           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 54</span> left  S_front_sup               lh_S_front_sup              </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 55</span> left  S_interm_prim-Jensen      lh_S_interm_prim-Jensen     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 56</span> left  S_intrapariet_and_P_trans lh_S_intrapariet_and_P_trans</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 57</span> left  S_oc_middle_and_Lunatus   lh_S_oc_middle_and_Lunatus  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 58</span> left  S_oc_sup_and_transversal  lh_S_oc_sup_and_transversal </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 59</span> left  S_occipital_ant           lh_S_occipital_ant          </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 60</span> left  S_oc-temp_lat             lh_S_oc-temp_lat            </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 61</span> left  S_oc-temp_med_and_Lingual lh_S_oc-temp_med_and_Lingual</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 62</span> left  S_orbital_lateral         lh_S_orbital_lateral        </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 63</span> left  S_orbital_med-olfact      lh_S_orbital_med-olfact     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 64</span> left  S_orbital-H_Shaped        lh_S_orbital-H_Shaped       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 65</span> left  S_parieto_occipital       lh_S_parieto_occipital      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 66</span> left  S_pericallosal            lh_S_pericallosal           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 67</span> left  S_postcentral             lh_S_postcentral            </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 68</span> left  S_precentral-inf-part     lh_S_precentral-inf-part    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 69</span> left  S_precentral-sup-part     lh_S_precentral-sup-part    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 70</span> left  S_suborbital              lh_S_suborbital             </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 71</span> left  S_subparietal             lh_S_subparietal            </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 72</span> left  S_temporal_inf            lh_S_temporal_inf           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 73</span> left  S_temporal_sup            lh_S_temporal_sup           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 74</span> left  S_temporal_transverse     lh_S_temporal_transverse    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 75</span> right G_and_S_frontomargin      rh_G_and_S_frontomargin     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 76</span> right G_and_S_occipital_inf     rh_G_and_S_occipital_inf    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 77</span> right G_and_S_paracentral       rh_G_and_S_paracentral      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 78</span> right G_and_S_subcentral        rh_G_and_S_subcentral       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 79</span> right G_and_S_transv_frontopol  rh_G_and_S_transv_frontopol </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 80</span> right G_and_S_cingul-Ant        rh_G_and_S_cingul-Ant       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 81</span> right G_and_S_cingul-Mid-Ant    rh_G_and_S_cingul-Mid-Ant   </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 82</span> right G_and_S_cingul-Mid-Post   rh_G_and_S_cingul-Mid-Post  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 83</span> right G_cingul-Post-dorsal      rh_G_cingul-Post-dorsal     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 84</span> right G_cingul-Post-ventral     rh_G_cingul-Post-ventral    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 85</span> right G_cuneus                  rh_G_cuneus                 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 86</span> right G_front_inf-Opercular     rh_G_front_inf-Opercular    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 87</span> right G_front_inf-Orbital       rh_G_front_inf-Orbital      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 88</span> right G_front_inf-Triangul      rh_G_front_inf-Triangul     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 89</span> right G_front_middle            rh_G_front_middle           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 90</span> right G_front_sup               rh_G_front_sup              </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 91</span> right G_Ins_lg_and_S_cent_ins   rh_G_Ins_lg_and_S_cent_ins  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 92</span> right G_insular_short           rh_G_insular_short          </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 93</span> right G_occipital_middle        rh_G_occipital_middle       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 94</span> right G_occipital_sup           rh_G_occipital_sup          </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 95</span> right G_oc-temp_lat-fusifor     rh_G_oc-temp_lat-fusifor    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 96</span> right G_oc-temp_med-Lingual     rh_G_oc-temp_med-Lingual    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 97</span> right G_oc-temp_med-Parahip     rh_G_oc-temp_med-Parahip    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 98</span> right G_orbital                 rh_G_orbital                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 99</span> right G_pariet_inf-Angular      rh_G_pariet_inf-Angular     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">100</span> right G_pariet_inf-Supramar     rh_G_pariet_inf-Supramar    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">101</span> right G_parietal_sup            rh_G_parietal_sup           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">102</span> right G_postcentral             rh_G_postcentral            </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">103</span> right G_precentral              rh_G_precentral             </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">104</span> right G_precuneus               rh_G_precuneus              </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">105</span> right G_rectus                  rh_G_rectus                 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">106</span> right G_subcallosal             rh_G_subcallosal            </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">107</span> right G_temp_sup-G_T_transv     rh_G_temp_sup-G_T_transv    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">108</span> right G_temp_sup-Lateral        rh_G_temp_sup-Lateral       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">109</span> right G_temp_sup-Plan_polar     rh_G_temp_sup-Plan_polar    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">110</span> right G_temp_sup-Plan_tempo     rh_G_temp_sup-Plan_tempo    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">111</span> right G_temporal_inf            rh_G_temporal_inf           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">112</span> right G_temporal_middle         rh_G_temporal_middle        </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">113</span> right Lat_Fis-ant-Horizont      rh_Lat_Fis-ant-Horizont     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">114</span> right Lat_Fis-ant-Vertical      rh_Lat_Fis-ant-Vertical     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">115</span> right Lat_Fis-post              rh_Lat_Fis-post             </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">116</span> right Pole_occipital            rh_Pole_occipital           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">117</span> right Pole_temporal             rh_Pole_temporal            </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">118</span> right S_calcarine               rh_S_calcarine              </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">119</span> right S_central                 rh_S_central                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">120</span> right S_cingul-Marginalis       rh_S_cingul-Marginalis      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">121</span> right S_circular_insula_ant     rh_S_circular_insula_ant    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">122</span> right S_circular_insula_inf     rh_S_circular_insula_inf    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">123</span> right S_circular_insula_sup     rh_S_circular_insula_sup    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">124</span> right S_collat_transv_ant       rh_S_collat_transv_ant      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">125</span> right S_collat_transv_post      rh_S_collat_transv_post     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">126</span> right S_front_inf               rh_S_front_inf              </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">127</span> right S_front_middle            rh_S_front_middle           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">128</span> right S_front_sup               rh_S_front_sup              </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">129</span> right S_interm_prim-Jensen      rh_S_interm_prim-Jensen     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">130</span> right S_intrapariet_and_P_trans rh_S_intrapariet_and_P_trans</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">131</span> right S_oc_middle_and_Lunatus   rh_S_oc_middle_and_Lunatus  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">132</span> right S_oc_sup_and_transversal  rh_S_oc_sup_and_transversal </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">133</span> right S_occipital_ant           rh_S_occipital_ant          </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">134</span> right S_oc-temp_lat             rh_S_oc-temp_lat            </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">135</span> right S_oc-temp_med_and_Lingual rh_S_oc-temp_med_and_Lingual</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">136</span> right S_orbital_lateral         rh_S_orbital_lateral        </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">137</span> right S_orbital_med-olfact      rh_S_orbital_med-olfact     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">138</span> right S_orbital-H_Shaped        rh_S_orbital-H_Shaped       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">139</span> right S_parieto_occipital       rh_S_parieto_occipital      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">140</span> right S_pericallosal            rh_S_pericallosal           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">141</span> right S_postcentral             rh_S_postcentral            </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">142</span> right S_precentral-inf-part     rh_S_precentral-inf-part    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">143</span> right S_precentral-sup-part     rh_S_precentral-sup-part    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">144</span> right S_suborbital              rh_S_suborbital             </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">145</span> right S_subparietal             rh_S_subparietal            </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">146</span> right S_temporal_inf            rh_S_temporal_inf           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">147</span> right S_temporal_sup            rh_S_temporal_sup           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">148</span> right S_temporal_transverse     rh_S_temporal_transverse    </span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
