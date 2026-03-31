@@ -5,6 +5,7 @@
 #' for [ggseg::geom_brain()].
 #'
 #' @family ggseg_atlases
+#' @family cortical_atlases
 #'
 #' @references Destrieux C, Fischl B, Dale A, Halgren E (2010).
 #'   Automatic parcellation of human cortical gyri and sulci using
